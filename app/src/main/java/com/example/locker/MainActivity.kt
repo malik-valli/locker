@@ -50,15 +50,15 @@ class MainActivity : AppCompatActivity() {
     private fun changeUIForCorrectness(isCorrect: Boolean) {
         fun changeLabel() {
             labelText.text =
-                if (isCorrect) getString(R.string.you_did_it)
-                else getString(R.string.can_you_hack_it)
+                if (isCorrect) getString(R.string.entry_title_disabled)
+                else getString(R.string.entry_title)
         }
 
         fun changeEnterButton() {
             submitButton.isEnabled = isCorrect
             submitButton.text =
                 if (isCorrect) getString(R.string.submit)
-                else getString(R.string.submit_disabled)
+                else getString(R.string.entry_button_disabled)
         }
         changeLabel()
         changeEnterButton()

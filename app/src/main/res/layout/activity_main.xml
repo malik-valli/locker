@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/can_you_hack_it"
+        android:text="@string/entry_title"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/cell1"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:enabled="false"
-        android:text="@string/submit_disabled"
+        android:text="@string/entry_button_disabled"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cell1" />
