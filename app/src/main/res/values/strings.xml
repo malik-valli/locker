@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lock</string>
+    <string name="can_you_hack_it">Can you hack it?</string>
+    <string name="you_did_it">Oh, you did it!</string>
+    <string name="submit">Submit</string>
+    <string name="submit_disabled">Find the right code</string>
+    <string name="remembered_password">Write if you remember it</string>
+    <string name="lets_go">Let\'s go</string>
+    <string name="write_that_password_backwards">Write that password backwards</string>
+    <string name="ending_title">Nice!\nDo you want another password?</string>
+    <string name="yes">Yes</string>
+    <string name="no">God, no.\nLeave me alone!</string>
+</resources>
