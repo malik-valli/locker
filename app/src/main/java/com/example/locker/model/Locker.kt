@@ -3,11 +3,8 @@ package com.example.locker.model
 import android.util.Log
 import android.widget.Button
 
-// TODO make a linking to the activity buttons
 object Locker {
-    private val _values = IntArray(4)
-    val values: IntArray
-        get() = _values.copyOf()
+    private val values = IntArray(4)
 
     private lateinit var rightValues: IntArray
 
@@ -28,12 +25,12 @@ object Locker {
     }
 
     fun scrollCell(position: Int) {
-        _values[position] = ++_values[position] % 10
-        listeners[position].text = _values[position].toString()
+        values[position] = ++values[position] % 10
+        listeners[position].text = values[position].toString()
 
-        if (_values[position] == rightValues[position])
+        if (values[position] == rightValues[position])
             signal()
     }
 
-    fun checkCorrectness() = _values.contentEquals(rightValues)
+    fun checkCorrectness() = values.contentEquals(rightValues)
 }

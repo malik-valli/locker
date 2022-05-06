@@ -9,7 +9,6 @@ import android.widget.TextView
 import com.example.locker.databinding.ActivityMainBinding
 import com.example.locker.model.Locker
 
-// TODO make data file for cells
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var submitButton: Button
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val cells = listOf(binding.cell1, binding.cell2, binding.cell3, binding.cell4)
         cells.forEach {
             Locker.listeners.add(it)
-            it.setOnClickListener { scrollCell(cells.indexOf(it)) }
+            it.setOnClickListener { view -> scrollCell(cells.indexOf(view)) }
         }
 
         submitButton.setOnClickListener {
