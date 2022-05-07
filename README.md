@@ -1,4 +1,4 @@
-# My first app completely made by me
+# The first app completely made by me
 The application uses concepts such as..
 - navigation between activities (intents);
 - actions based on the current context;
